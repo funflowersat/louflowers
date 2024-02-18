@@ -1,3 +1,9 @@
+@media (min-width: 1430px) {
+    
+.section-text-subtitle{
+    font-size: 20px !important;}
+}
+
 @media (max-width: 1700px) {
     .section-sub{
         width: 90% !important;
@@ -94,13 +100,12 @@
 }
 
 .section-text-title{
-    font-weight: 700;
+    font-weight: 700 !important;
     color: #ef3682;
 }
 
 .section-text-subtitle{
     margin-top: 10px !important;
-    font-size: 20px !important;
     color: #333333;
     font-weight: 300 !important;
 }
