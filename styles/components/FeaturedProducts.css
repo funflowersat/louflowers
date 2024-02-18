@@ -1,3 +1,15 @@
+/* SeasonalProducts.js */
+
+.featured-icon-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.featured-icon-container img{
+    margin: 70px 0 0 15px;
+    width: 36px;
+    height: 36px;
+}
 
 
 /* FeaturedProducts.js */
@@ -6,18 +18,17 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: rgba(255, 251, 235, 0.6) !important;
     padding-bottom: 30px;
 }
 
 .featured-heading{
     margin: 60px 0 0 0 !important;
-    font-family: Shantell Sans !important;
+  
     font-weight: 600;
 }
 .featured-sub-heading{
     margin: 0 0 45px 0 !important;
-    font-family: Shantell Sans !important;
+
     font-weight: 500 !important;
 }
 
@@ -150,7 +161,8 @@
     background: transparent;
     font-family: League Spartan !important;
     font-weight: 400;
-    color: #F8CBA6;
+    color: #333333;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   
   .featured-button h6:before {
@@ -184,14 +196,14 @@
   }
   
   .featured-button h6:hover:before {
-    border-color: #F8CBA6;
+    border-color: #f7e1e4;
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .3s;
   }
   
   .featured-button h6:hover:after {
-    border-color: #F8CBA6;
+    border-color: #f7e1e4;
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .3s;

@@ -4,27 +4,28 @@ import Link from 'next/link';
 
 function IconsSection() {
   return (
-    <Paper className='icons-section-container' elevation={0}>
 
-      <div className='icons-divs'>
-        <img src={`https://i.ibb.co/Tcv79PN/delivery-courier-2.png`} width={150}/>
-        <Typography variant='h4' component='h1'> Ātra & Droša Piegāde </Typography>
-        <Typography variant='subtitle1' component='h2'> Sākas no 2.99€ </Typography>
+      <div className="section-container">
+        <div className="section-sub">
+          <div className="section-text">
+            <Typography className='section-text-title' variant='h3' component='h1'>
+              Special holiday offers
+            </Typography>
+            <Typography className='section-text-subtitle' variant='subtitle1' component='p'>
+              
+              Indulge in a delightful surprise with our special offer! <span style={{fontWeight: '500'}}> When you spend over 110 euros </span> on our enchanting floral bouquets, you'll receive a complimentary mystery chocolate box to sweeten your experience.
+              <br></br> <span style={{marginTop: '7px'}}></span> 
+              Immerse yourself in the joy of gifting or treating yourself to our exquisite blooms, and let us add an extra touch of decadence with our carefully curated selection of premium chocolates. Handpicked for their exceptional quality and irresistible flavors, our mystery chocolate boxes are a tantalizing addition to any order.
+              <br></br> <span style={{marginTop: '7px'}}></span> 
+              <span id='section-extra-text'>Whether you're celebrating a milestone, expressing love and appreciation, or simply craving a moment of indulgence, our free chocolate box is the perfect complement to your bouquet purchase. It's our way of saying thank you for choosing our boutique for your floral needs.</span>
+              
+            </Typography>
+            <Link href='/store' className='section-button'><Typography variant='h6'> Shop Now </Typography></Link>
+          </div>
+          <div className="section-image"></div>
+        </div>
       </div>
 
-      <div className='icons-divs'>
-        <img src={`https://i.ibb.co/k2gb6pW/customer-service-agent-1.png`} width={150}/>
-        <Typography variant='h4' component='h1'> Atsaucīgs personāls </Typography>
-        <Link href='/contactus'><Typography variant='subtitle1' component='h2'> Sazināties ar mums </Typography></Link>
-      </div>
-
-      <div className='icons-divs'>
-        <img src={`https://i.ibb.co/GQDgJnq/warehouse-1.png`} width={150}/>
-        <Typography variant='h4' component='h1'> Bezmaksas piegāde Latvijā </Typography>
-        <Typography variant='subtitle1' component='h2'> Sūtījumiem no 89€ </Typography>
-      </div>
-
-    </Paper>
   )
 }
 
