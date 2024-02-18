@@ -25,29 +25,31 @@ function GiftsSection() {
     const href25 = '/store/all/filter?50';
 
   return (
-    <div className='gifts-container'>
+    <div className='gifts'>
+      <div className='gifts-container'>
 
-        <div className='gifts-divs'>
-            <Link href='/store/all?50'><img  src="https://i.ibb.co/F8Y2gVs/Childrensfloralgiftbox-1024x1024.webp" className='gifts-img'/></Link>
-            <Link href='/store/all?50' className='gifts-img-text'><Typography variant='h6' > Dāvanas zem 50.00€ {arrowSVG}</Typography> </Link>
-        </div>
+          <div className='gifts-divs'>
+              <Link href='/store/all?50'><img  src="https://funflowers.lv/image/cache/catalog/new_2022/photo_2022-03-03_17.09.37-270x350.webp" className='gifts-img'/></Link>
+              <Link href='/store/all?50' className='gifts-img-text'><Typography variant='h6' > Bouqets under 50.00€ {arrowSVG}</Typography> </Link>
+          </div>
 
-        <div className='gifts-divs'>
-            <Link href='/store/all?75'><img  src="https://i.ibb.co/5M6pW14/baby-gift-box-480x480.webp" className='gifts-img'/></Link>
-            <Link href='/store/all?75' className='gifts-img-text'><Typography variant='h6' > Dāvanas zem 75.00€ {arrowSVG}</Typography> </Link>
-        </div>
+          <div className='gifts-divs'>
+              <Link href='/store/all?100'><img  src="https://funflowers.lv/image/cache/catalog/new_2023/img_9710t-900x1100.webp" className='gifts-img'/></Link>
+              <Link href='/store/all?100' className='gifts-img-text'><Typography variant='h6' >Bouqets under 100€ {arrowSVG}</Typography> </Link>
+          </div>
 
-        <div className='gifts-divs'>
-            <Link href='/store/all?100'><img  src="https://i.ibb.co/4VzxvNK/750678fa2bc53298e9b844d064b45866.jpg" className='gifts-img'/></Link>
-            <Link href='/store/all?100' className='gifts-img-text'><Typography variant='h6' > Dāvanas zem 100.00€ {arrowSVG}</Typography> </Link>
-        </div>
+          <div className='gifts-divs'>
+              <Link href='/store/all?150'><img  src="https://funflowers.lv/image/cache/catalog/new_2022/photo_2022-01-06_17.18.26-270x350.webp" className='gifts-img'/></Link>
+              <Link href='/store/all?150' className='gifts-img-text'><Typography variant='h6' > Boquets under 150.00€ {arrowSVG}</Typography> </Link>
+          </div>
 
-        <div className='gifts-divs'>
-            <Link href='/store/all'><img  src="https://i.ibb.co/WBF4gb3/il-fullxfull-4182593184-iman.webp" className='gifts-img'/></Link>
-            <Link href='/store/all' className='gifts-img-text'><Typography variant='h6' > Visas Dāvanas {arrowSVG}</Typography> </Link>
-        </div>
-        
+          <div className='gifts-divs'>
+              <Link href='/store/all'><img  src="https://funflowers.lv/image/cache/catalog/new_2023/img_4249_-900x1100.webp" className='gifts-img'/></Link>
+              <Link href='/store/all' className='gifts-img-text'><Typography variant='h6' > All Flowers {arrowSVG}</Typography> </Link>
+          </div>
+          
 
+      </div>
     </div>
   )
 }

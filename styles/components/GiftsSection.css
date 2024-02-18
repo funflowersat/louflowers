@@ -14,13 +14,19 @@
   }
 }
 
+.gifts{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .gifts-container{
+    width: 80%;
     padding: 90px 0px 90px 0px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: space-evenly;
-    background-color: rgba(255, 251, 235, 0.6) !important;
 }
 
 .gifts-divs{
@@ -55,7 +61,7 @@
     content: '';
     width: 0%;
     height: 3px;
-    background: #F8CBA6;
+    background: #f7e1e4;
     display: block;
     transition: 0.5s;
   }
