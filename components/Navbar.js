@@ -20,11 +20,11 @@ import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import Cart from './Cart';
 import { useStateContext } from '../context/StateContext';
 
-const pages = ['Galvenā', 'Veikals', 'Kontakti'];
+const pages = ['Home', 'Store', 'Contacts'];
 const pageLinks = {
-  'Galvenā': '/',
-  'Veikals': '/store',
-  'Kontakti': '/contacts',
+  'Home': '/',
+  'Store': '/store',
+  'Contacts': '/contacts',
 };
 
 function ResponsiveAppBar() {
@@ -100,7 +100,7 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: '#F8CBA7', display: 'block', fontSize:'18px', fontFamily:'League Spartan', fontWeight:'400'}}
+                sx={{ my: 2, color: '#333333', display: 'block', fontSize:'18px', fontFamily:'League Spartan', fontWeight:'400'}}
               >
                 {page}
               </Button>
@@ -111,7 +111,6 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 0 }}>
           <IconButton href='/' color='secondary'><InstagramIcon className='navbar-icons'/></IconButton>
-          <IconButton href='/' color='secondary'><FacebookOutlinedIcon className='navbar-icons'/></IconButton>
           <IconButton color='secondary' onClick={() => showCart === true ? setShowCart(false) : setShowCart(true)}><ShoppingBagOutlinedIcon className='navbar-icons'/></IconButton>
           <span className='navbar-cart-qty'>{totalQuantities}</span>
           </Box>

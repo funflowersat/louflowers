@@ -13,13 +13,13 @@ import Footer from '@/components/Footer';
 const theme = createTheme({
   palette: {
      primary: {
-        main: '#FFFBEB',
+        main: '#FFFFFF',
         light: '#FFFCF2',
         dark: '#FFF8DD',
         contrastText: '#000000',
      },
      secondary: {
-      main: '#F8CBA6',
+      main: '#333333',
       contrastText: '#FFFFFF',
    },
   },
