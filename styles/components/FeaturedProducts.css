@@ -37,7 +37,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 20px !important;
     width: 100%;
 }
 

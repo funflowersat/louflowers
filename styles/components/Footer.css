@@ -1,92 +1,140 @@
 .footer-container{
-    padding: 40px 0 40px 0;
     display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(255, 251, 235, 0.6);
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-img{
+    width: 350px;
+}
+
+.footer-img:hover{
+    opacity: 0.8;
+    transition: ease 0.4s;
+}
+.footer-img:not(:hover){
+    transition: ease 0.4s;
+}
+
+.footer-legend{
+    color: #333333;
+    margin-top: -15px;
+    font-weight: 400 !important;
+}
+
+.footer-email{
+    color: #333333;
+    margin-top: 10px;
+    font-weight: 400 !important;
+}
+
+.footer-email:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.footer-button h6{
+    width: 200px;
     height: auto;
-    justify-content: space-evenly;
-}
-
-
-.footer-column h3{
-    font-family: Shantell Sans !important;
-    color: #F8CBA7;
-    margin-bottom: 20px;
-}
-
-#footer-links::before {
-    margin-left: auto;
-}
-  
-#footer-links::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #F8CBA6;
+    float: left;
+    transition: .5s linear;
+    position: relative;
     display: block;
-    transition: 0.5s;
-}
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    font-family: League Spartan !important;
+    font-weight: 400;
+    color: #333333;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    font-weight: 600 !important;
+    margin-top: 20px;
+  }
   
-#footer-links:hover::after {
-    width: 50%;
-}
+  .footer-button h6:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .footer-button h6:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .footer-button h6:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer-button h6:hover:before {
+    border-color: #f7e1e4;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .footer-button h6:hover:after {
+    border-color: #f7e1e4;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .footer-button {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
 
+  .footer-links{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+  }
 
+  .footer-link{
+    font-size: 18px;
+    text-decoration: underline;
+    color: #333333;
+  }
 
+  .footer-link:hover{
+    opacity: 0.8;
+    transition: ease 0.4s;
+  }
+  .footer-link:not(:hover){
+    transition: ease 0.4s;
+  }
 
-#phone, #mail{
-    font-size: 23px;
-    color: #4F4F4F;
-    margin-right: 7px;
-}
-.footer-phone{
-    padding-top: -10px;
-    color: #4F4F4F;
-}
+  .footer-payments{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 15px;
+    gap: 20px;
+  }
 
-#footer-divider1{
-    height: 300px;
-    background-color: #F8CBA6;
-    width: 3px;
-}
-#footer-divider2{
-    height: 300px;
-    background-color: #F8CBA6;
-    width: 3px;
-}
-
-#footer-socials{
-    color: #4f4f4f;
-    transition: 0.5s ease;
-}
-#footer-socials:hover{
-    color: #f8cba6;
-    font-size: 38px;
-    transition: 0.5s ease;
-}
-
-@media (max-width:700px) {
-    #footer-divider1{
-        margin-right: 10px;
-    }
-    #footer-divider2{
-        display: none !important;
-    }
-}
-
-@media (max-width:490px) {
-    #footer-divider1{
-        display: none !important;
-    }
-    .footer-column{
-        margin: 0px 0px 20px 50px !important;
-        width: 100% !important;
-    }
-
-}
-@media (max-width:270px) {
-    .footer-column{
-        margin: 0px 0px 20px 3px !important;
-    }
-
-}
+  .footer-payment{
+    width: 50px;
+  }

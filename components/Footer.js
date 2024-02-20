@@ -14,47 +14,28 @@ import Link from 'next/link';
 function Footer() {
   return (
     <div className='footer-container'>
+        <Link href='/'>
+            <img className='footer-img' src="https://i.ibb.co/F3bLWtF/photo-5942589873020059994-y-removebg-preview.png" alt="footer-logo" />
+       </Link>
+       <Typography variant='h6' className='footer-legend'>
+           - Your premium floristic atelier -
+       </Typography>
+       <Typography onClick={(e) => {window.location.href ='mailto:info@louflowers.at';}} variant='h6' className='footer-email'>
+           info@louflowers.at
+       </Typography>
 
-        <div className='footer-column'>
-            <Typography variant='h3'> Kontakti </Typography>
+       <div className="footer-links">
+            <Link className='footer-link' href='/'> Home </Link>
+            <Link className='footer-link' href='/store'> Store </Link>
+            <Link className='footer-link' href='/contacts'> Contacts </Link>
+       </div>
 
-            <div style={{display:'flex'}}>
-                <LocalPhoneOutlinedIcon id='phone' fontSize=''/>
-                <Typography variant='subtitle1' className='footer-phone'> +371 20334412</Typography>
-            </div>
-
-            <div style={{display:'flex'}}>
-                <EmailOutlinedIcon id='mail' fontSize=''/>
-                <Typography variant='subtitle1' className='footer-phone'> babybox@gmail.com </Typography>
-            </div>
-
-            <Typography variant='subtitle1'>
-                SIA &quot;Baby Box&quot; <br></br>
-                Reģ. Nr.: 4242424242 <br></br>
-                Jur. adrese: Rīgas iela 11-12, Rīga, LV-1001 <br></br>
-                Bankas rekvizīti: SWEDBANK AS <br></br>
-                SWIFT kods: HABALV22 <br></br>
-                Konta Nr.: LV62HABA0551044665836 <br></br>
-            </Typography>
-        </div>
-
-        <span id='footer-divider1'></span>
-
-        <div className="footer-column">
-            <Typography variant='h3'> Izvēlne </Typography>
-            <Link id='footer-links' href='/'> <Typography varaiant='subtitle1'> Galvenā </Typography> </Link>
-            <Link id='footer-links' href='/store'> <Typography varaiant='subtitle1'> Visas Preces </Typography> </Link>
-            <Link id='footer-links' href='/contacts'> <Typography varaiant='subtitle1'> Sazināties ar mums </Typography> </Link>
-        </div>
-
-        <span id='footer-divider2'></span>
-
-        <div className="footer-column">
-            <Typography variant='h3'> Seko mums </Typography>
-            <Link href='/'><FacebookSharpIcon fontSize='large' id='footer-socials'/></Link>
-            <Link href='/'><InstagramIcon fontSize='large' id='footer-socials'/></Link>
-        </div>
-
+       <div className="footer-payments">
+            <img className='footer-payment' src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Visa_Logo.png/640px-Visa_Logo.png" alt="visa" />
+            <img className='footer-payment' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1200px-MasterCard_Logo.svg.png" alt="master card" />
+            <img className='footer-payment' src="https://cdn-icons-png.flaticon.com/512/196/196539.png" alt="american express" />
+            <img className='footer-payment' src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Discover_Card_logo.svg/1200px-Discover_Card_logo.svg.png" alt="discover" />
+       </div>
     </div>
   )
 }
