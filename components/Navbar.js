@@ -110,7 +110,7 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-          <IconButton href='/' color='secondary'><InstagramIcon className='navbar-icons'/></IconButton>
+          <IconButton href='https://www.instagram.com/1ouflowers/' color='secondary'><InstagramIcon className='navbar-icons'/></IconButton>
           <IconButton color='secondary' onClick={() => showCart === true ? setShowCart(false) : setShowCart(true)}><ShoppingBagOutlinedIcon className='navbar-icons'/></IconButton>
           <span className='navbar-cart-qty'>{totalQuantities}</span>
           </Box>
