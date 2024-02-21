@@ -16,24 +16,26 @@ import { FreeMode } from 'swiper';
 import { useStateContext } from '@/context/StateContext';
 import { useRouter } from 'next/router';
 
+import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
+
 const theme = createTheme({
-    palette: {
-       primary: {
-          main: '#FFFBEB',
-          light: '#FFFCF2',
-          dark: '#FFF8DD',
-          contrastText: '#000000',
-       },
-       secondary: {
-        main: '#F8CBA6',
-        contrastText: '#FFFFFF',
+  palette: {
+     primary: {
+        main: '#FFFFFF',
+        light: '#FFFCF2',
+        dark: '#FFF8DD',
+        contrastText: '#000000',
      },
-    },
-    typography: {
-      "fontFamily": `"League Spartan", sans-serif`,
-      "fontWeightRegular": 300,
-    }
-  });
+     secondary: {
+      main: '#333333',
+      contrastText: '#FFFFFF',
+   },
+  },
+  typography: {
+    "fontFamily": `"League Spartan", sans-serif`,
+    "fontWeightRegular": 300,
+  }
+});
 
 function ProductDetails({ product, products}) {
   const [showLoader, setShowLoader] = useState(true);
@@ -137,7 +139,7 @@ function ProductDetails({ product, products}) {
               className="slug-desc-contents"
             >
               {" "}
-              Apraksts:{" "}
+              Description:{" "}
             </Typography>
             <Typography
               variant="subtitle1"
@@ -147,6 +149,11 @@ function ProductDetails({ product, products}) {
               {" "}
               {details}{" "}
             </Typography>
+
+            <div className='slug-delivery'>
+              <LocalShippingOutlinedIcon className='slug-delivery-icon'/>
+              <Typography variant='h6'> 1-2 day delivery </Typography>
+            </div>
 
             <Typography variant="h4" className="slug-desc-price">
               {" "}
@@ -180,7 +187,7 @@ function ProductDetails({ product, products}) {
                     onClick={() => onAdd(product, qty)}
                   >
                     {" "}
-                    Pievienot Grozam
+                    Add to cart
                   </Button>
                   <Button
                     className="slug-desc-button-buy"
@@ -188,7 +195,7 @@ function ProductDetails({ product, products}) {
                     onClick={handleBuyNow}
                   >
                     {" "}
-                    Pirkt Tagad
+                    Buy now
                   </Button>
                 </>
               )}
@@ -197,7 +204,7 @@ function ProductDetails({ product, products}) {
         </div>
         <Typography variant="h6" className="slug-recommend-label">
           {" "}
-          Jums var arī patikt:{" "}
+          You might also like:{" "}
         </Typography>
         <div className="slug-recommend-container track">
           <Swiper

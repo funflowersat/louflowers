@@ -4,7 +4,17 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    background-color: rgba(255, 251, 235, 0.6);
+}
+
+.slug-delivery{
+    display: flex;
+    flex-direction: row;
+    color: #4f4f4f;
+}
+
+.slug-delivery-icon{
+    align-self: center;
+    margin-right: 10px;
 }
 
 .slug-content{
@@ -89,7 +99,7 @@
 .slug-desc-price{
     margin-top: 20px !important;
     font-weight: 500;
-    color: #F8CBA6;
+    color: #ffd7dc;
 }
 
 .slug-desc-quantity{
@@ -101,7 +111,7 @@
     margin-left: 30px;
     width: 140px;
     height: 40px;
-    border: solid 2px #F8CBA6;
+    border: solid 2px #ffd7dc;
     border-radius: 15px;
 }
 
@@ -117,7 +127,7 @@
     justify-content: center;
     width: 33.33%;
     height: 100%;
-    border-right: solid 2px #F8CBA6 !important;
+    border-right: solid 2px #ffd7dc !important;
 }
 #number{
     all: unset;
@@ -127,7 +137,7 @@
     justify-content: center;
     width: 33.33333%;
     height: 100%;
-    border-right: solid 2px #F8CBA6;
+    border-right: solid 2px #ffd7dc;
 }
 #minus{
     border-right: none !important;
@@ -140,18 +150,18 @@
     border-radius: 0px 10px 10px 0px;
 }
 #plus:hover{
-    background-color: #f8cba668 !important;
+    background-color: #ffd7dc68 !important;
 }
 #minus:hover{
-    background-color: #f8cba668 !important;
+    background-color: #ffd7dc68 !important;
 }
 #plus:active{
     transition: ease-in-out 0.1s;
-    background-color: #f8cba61f !important;
+    background-color: #ffd7dc1f !important;
 }
 #minus:active{
     transition: ease-in-out 0.1s;
-    background-color: #f8cba61f !important;
+    background-color: #ffd7dc1f !important;
 }
 
 /*  */
@@ -164,8 +174,8 @@
     border-radius: 0px !important;
     margin: 20px 20px 0px 0px !important;
     height: 40px;
-    border: solid 2px #F8CBA6 !important;
-    color: #F8CBA6 !important;
+    border: solid 2px #ffd7dc !important;
+    color: #ffd7dc !important;
     padding: 23px 20px 20px 20px !important;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 
@@ -175,8 +185,8 @@
     border-radius: 0px !important;
     margin: 20px 20px 0px 0px !important;
     height: 40px;
-    border: solid 2px #F8CBA6 !important;
-    background-color: #F8CBA6 !important;
+    border: solid 2px #ffd7dc !important;
+    background-color: #ffd7dc !important;
     color: white !important;
     padding: 23px 20px 20px 20px !important;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
