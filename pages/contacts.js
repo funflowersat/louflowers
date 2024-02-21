@@ -13,23 +13,23 @@ import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 
 
 const theme = createTheme({
-    palette: {
-       primary: {
-          main: '#FFFBEB',
-          light: '#FFFCF2',
-          dark: '#FFF8DD',
-          contrastText: '#000000',
-       },
-       secondary: {
-        main: '#F8CBA6',
-        contrastText: '#FFFFFF',
+  palette: {
+     primary: {
+        main: '#FFFFFF',
+        light: '#FFFCF2',
+        dark: '#FFF8DD',
+        contrastText: '#000000',
      },
-    },
-    typography: {
-      "fontFamily": `"League Spartan", sans-serif`,
-      "fontWeightRegular": 300,
-    }
-  });
+     secondary: {
+      main: '#333333',
+      contrastText: '#FFFFFF',
+   },
+  },
+  typography: {
+    "fontFamily": `"League Spartan", sans-serif`,
+    "fontWeightRegular": 300,
+  }
+});
 
 function contacts() {
   return (
@@ -40,7 +40,10 @@ function contacts() {
             <div className='contacts-container'>
 
               <div className='contacts-banner-section'>
-                <Typography variant='h2' component='h1' className='contacts-heading'> Kontakti </Typography>
+                <div className='contacts-heading-div'>
+                  <Typography variant='h2' component='h1' className='contacts-heading'> Contacts </Typography> 
+                  <img className='contacts-img' src="https://i.ibb.co/9GbsLQp/flowers.png" alt="flowers" />
+                </div>
                 <IconBreadcrumbs/>
               </div>
 
@@ -65,7 +68,7 @@ function IconBreadcrumbs() {
             href="/"
           >
             <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-            Galvenā
+            Home
           </Link>
           <Link
             underline="hover"
@@ -74,7 +77,7 @@ function IconBreadcrumbs() {
             href="/contacts"
           >
             <PermContactCalendarIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-            Kontakti
+            Contacts
           </Link>
         </Breadcrumbs>
     );
@@ -124,30 +127,30 @@ const ContactsForm = () => {
     return(
 
         <div className="contacts-form-container">
-            <Typography variant='h4'> Atstājiet mums savas atsauksmes </Typography>
-            <Typography variant='h5'> Mēs sazināsimies ar jums tuvākajā laikā. </Typography>
-            <Typography variant='subtitle1'> Ja jums ir preces, kuras vēlaties pārdot mūsu lapā, nosūtiet mums savu numuru.</Typography>
+            <Typography variant='h4'> Leave us your sugestions. </Typography>
+            <Typography variant='h5'> We will contacts you as soon as possible. </Typography>
+            <Typography variant='subtitle1'> If you are interested in partnership or business oppurtunities, leave us your number.</Typography>
             
             <form ref={form} onSubmit={sendEmail} className='contacts-form'>
                 <div className="contacts-form-div">
-                    <TextField required className='contacts-form-input' name='name' label="Vārds" variant="outlined" color='secondary'/>
-                    <TextField required className='contacts-form-input' type='email' name='email' label="E-pasts" variant="outlined" color='secondary'/>
+                    <TextField required className='contacts-form-input' name='name' label="Name" variant="outlined" color='secondary'/>
+                    <TextField required className='contacts-form-input' type='email' name='email' label="E-mail" variant="outlined" color='secondary'/>
                 </div>
-                <TextField required label="Ziņa" type='text' name='message' variant="outlined" color='secondary' multiline rows={6}/>
-                <FormControlLabel control={<Checkbox color='secondary' defaultChecked />} label="Saņemt īpašos piedāvājumus un akcijas uz manu e-pastu." />
+                <TextField required label="Message" type='text' name='message' variant="outlined" color='secondary' multiline rows={6}/>
+                <FormControlLabel control={<Checkbox color='secondary' defaultChecked />} label="Receive special offers and news letters on my e-mail" />
 
-                <Button className='contacts-form-submit' type='submit'> Sūtīt </Button>
+                <Button className='contacts-form-submit' type='submit'> Send </Button>
             </form>
 
             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                 <Alert onClose={handleClose} severity="success" sx={{ width: '100%', fontSize:'16px', fontWeight: '500' }}>
-                Jūsu ziņojums tika nosūtīts! {`\u{1F609}`}
+              Your message has been sent! {`\u{1F609}`}
                 </Alert>
             </Snackbar>
 
             <Snackbar open={openError} autoHideDuration={6000} onClose={handleCloseError}>
                 <Alert onClose={handleCloseError} severity="error" sx={{ width: '100%', fontSize:'16px', fontWeight: '500' }}>
-                Kautkas notika ne tā! Mēģiniet vēlreiz vēlāk.
+                Something went wrong, please try again later!
                 </Alert>
             </Snackbar>
 

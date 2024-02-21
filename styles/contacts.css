@@ -4,16 +4,17 @@
     align-items: center;
 }
 
-.contacts-heading{
-    font-family: Shantell Sans !important;
-    margin: 30px 0 0 0;
+.contacts-heading-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
 }
 
-.contacts-divider{
-    margin: 30px 0 20px 0;
-    height: 3px;
-    width: 100%;
-    background-color: #F8CBA6;
+
+.contacts-img{
+    width: 50px;
+    margin: 0px 0 0 12px ;
 }
 
 .contacts-form-container{
@@ -43,7 +44,7 @@
 
 
 .contacts-form-submit {
-    background-color: #FFFBEB !important;
+    background-color: #f7e1e4 !important;
     border: none;
     padding: 0.5rem;
     font-size: 1rem;
@@ -51,21 +52,21 @@
     font-weight: 400;
     width: 10em;
     border-radius: 1rem !important;
-    color: #F8CBA6 !important;
+    color: rgb(255, 255, 255) !important;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     cursor: pointer;
     border: solid 2px !important;
    }
    
 .contacts-form-submit:active {
-    color: #FFFBEB !important;
+    color: #f7e1e4 !important;
     box-shadow: 0 0.2rem #c5c1c1 !important;
     transform: translateY(0.2rem);
    }
    
 .contacts-form-submit:hover:not(:disabled) {
-    background: #F8CBA6 !important;
-    color: #FFFBEB !important;
+    background: #f7e1e4 !important;
+    color: white !important;
    }
 
 .contacts-form-submit:disabled {
@@ -74,14 +75,3 @@
    }
 
 
-   .contacts-banner-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding-bottom: 30px;
-    border-top: solid #F8CBA6;
-    width: 100%;
-
-   }
