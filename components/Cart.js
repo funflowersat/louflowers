@@ -26,7 +26,7 @@ function Cart() {
   const handleCheckout = async () => {
     setShowLoader(true);
     const stripe = await getStripe();
-    
+
     const response = await fetch('/api/stripe', {
       method: 'POST',
       headers: {
@@ -35,10 +35,13 @@ function Cart() {
       body: JSON.stringify(cartItems),
     });
 
+
     if(response.statusCode === 500) return;
     const data = await response.json();
+    console.log(data)
 
     toast.loading('Please wait...');
+    
 
     stripe.redirectToCheckout({ sessionId: data.id });
   };
