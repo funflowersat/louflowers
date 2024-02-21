@@ -75,11 +75,6 @@ function All({ featuredProducts }) {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
-      <StoreBanner
-        title="Visas Preces"
-        breadcrumbLink="/store/all"
-        breadcrumbName="Visiem"
-      />
 
       <div className="store-sorting">
         <FormControl

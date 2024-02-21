@@ -41,6 +41,8 @@ function ProductDetails({ product, products}) {
   const [selectedImage, setselectedImage] = useState(0);
   const router = useRouter();
   const { slug } = router.query;
+  const { view, setView } = useStateContext();
+
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -57,7 +59,7 @@ function ProductDetails({ product, products}) {
     };
 
     router.events.on('routeChangeStart', handleRouteChange);
-
+    setView('default');
     return () => {
       router.events.off('routeChangeStart', handleRouteChange);
     };
