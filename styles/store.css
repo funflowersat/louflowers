@@ -197,8 +197,8 @@
 }
 
 #cart-checkout-button:hover{
-  background-color: #fabb87 !important;
-  border-color: #fabb87 !important;
+  background-color: #ffd7dcc5 !important;
+  border-color: #ffd7dc !important;
 }
 
 @media (max-width: 550px) {

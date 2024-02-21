@@ -38,7 +38,7 @@ function Cart() {
     if(response.statusCode === 500) return;
     const data = await response.json();
 
-    toast.loading('Lūdzu uzgaidiet...');
+    toast.loading('Please wait...');
 
     stripe.redirectToCheckout({ sessionId: data.id });
   };
@@ -59,8 +59,8 @@ function Cart() {
           onClick={() => setShowCart(false)}
         >
           <ArrowLeftOutlinedIcon />
-          <span className="heading">Jūsu Grozs</span>
-          <span className="cart-num-items">({totalQuantities}) preces</span>
+          <span className="heading">Your Cart</span>
+          <span className="cart-num-items">({totalQuantities}) items</span>
         </button>
         {cartItems.length < 1 && (
           <div
@@ -73,10 +73,10 @@ function Cart() {
             }}
           >
             <LocalMallOutlinedIcon sx={{ fontSize: "12rem" }} />
-            <Typography variant="h3">Jūsu grozs ir tukšs.</Typography>
+            <Typography variant="h3">Your cart is empty</Typography>
             <Button href="/" className="slug-desc-button-buy">
               {" "}
-              Turpināt iepirkties
+              Continue shopping
             </Button>
           </div>
         )}
@@ -132,7 +132,7 @@ function Cart() {
         {cartItems.length >= 1 && (
           <div className="cart-bottom">
             <div className="total">
-              <h3>Kopā:</h3>
+              <h3>Total:</h3>
               <h3>{totalPrice.toFixed(2)}€</h3>
             </div>
             <div>
@@ -145,7 +145,7 @@ function Cart() {
                   id="cart-checkout-button"
                 >
                   {" "}
-                  Veikt apmaksu
+                  Pay now
                 </Button>
               )}
             </div>
