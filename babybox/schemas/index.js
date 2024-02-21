@@ -42,19 +42,7 @@ export const schemaTypes = [
             title: 'Category',
             type: 'string',
         },
-        {
-            name:'gender',
-            title: 'Gender',
-            type: 'string',
-            initialValue: '',
-            options:{
-                list: [
-                    { title: 'Boy', value: 'boy'},
-                    { title: 'Girl', value: 'girl'},
-                    { title: 'All', value: 'all'},
-                ]
-            }
-        }
+
     ],
     },
 ]
