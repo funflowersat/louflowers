@@ -49,10 +49,10 @@ function Success() {
       <div className="success-container">
           <div className="success-card">
             <LocalMallOutlinedIcon sx={{color:"green", fontSize: "100px"}}/>
-            <Typography variant="h3">Paldies par jūsu pasūtījumu!</Typography>
-            <Typography variant="h6" sx={{fontWeight: "300"}}> Pasūtījūma apstiprinājums tika nosūtīts jums uz e-pastu. </Typography>
-            <Typography variant="h6" sx={{fontWeight: "300", mt: 4}}> Jautājumu gadījumā lūgums sazināties ar mums pa mūsu e-pastu <Link href="/contacts" style={{color: "#F8CBA6"}}>babybox@gmail.com</Link> </Typography>
-            <Button href="/" variant="contained" color="secondary" sx={{mt: 4, fontSize: "18px", fontWeight: "400"}}> Turpināt iepirkties </Button>
+            <Typography variant="h3">Thank you for your oder!</Typography>
+            <Typography variant="h6" sx={{fontWeight: "300"}}> Order confirmation has been sent to your e-mail. </Typography>
+            <Typography variant="h6" sx={{fontWeight: "300", mt: 4}}> For any questions please contact us at <Link href="/contacts" style={{color: "#F8CBA6"}}>info@louflower.at</Link> </Typography>
+            <Button href="/" variant="contained" color="secondary" sx={{mt: 4, fontSize: "18px", fontWeight: "400"}}> Continue shopping </Button>
           </div>
       </div>
       <Footer/>

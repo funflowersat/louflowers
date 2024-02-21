@@ -19,11 +19,17 @@
     }
 }
 .store-select-container{
-    height: inherit;
+    height: 60vh;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+
+}
+.store-select-container h1{
+
+  margin: auto;
 }
 
 .store-select-boy, .store-select-girl, .store-select-all{

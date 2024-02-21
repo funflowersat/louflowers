@@ -20,7 +20,7 @@ function IconsSection() {
               <span id='section-extra-text'>Whether you&apos;re celebrating a milestone, expressing love and appreciation, or simply craving a moment of indulgence, our free chocolate box is the perfect complement to your bouquet purchase. It&apos;s our way of saying thank you for choosing our boutique for your floral needs.</span>
               
             </Typography>
-            <Link href='/store' className='section-button'><Typography variant='h6'> Shop Now </Typography></Link>
+            <Link href='/store/all' className='section-button'><Typography variant='h6'> Shop Now </Typography></Link>
           </div>
           <div className="section-image"></div>
         </div>

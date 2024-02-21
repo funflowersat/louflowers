@@ -26,7 +26,7 @@ function StoreBanner({title, breadcrumbLink, breadcrumbName}) {
             underline="hover"
             sx={{ display: 'flex', alignItems: 'center', fontSize: '20px' }}
             color="inherit"
-            href="/store"
+            href="/store/all"
           >
             <StoreIcon sx={{ mr: 0.5 }} fontSize="inherit" />
             Veikals

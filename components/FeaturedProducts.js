@@ -16,7 +16,7 @@ const FeaturedProducts = ({featuredProducts}) => {
         <div className='product-container'>
             {featuredProducts?.map((fproduct) => <Product key={fproduct._id} product={fproduct}/>)}
         </div>
-        <Link href='/store' className='featured-button'><Typography variant='h6'> See More </Typography></Link>
+        <Link href='/store/all' className='featured-button'><Typography variant='h6'> See More </Typography></Link>
     </Paper>
   )
 }

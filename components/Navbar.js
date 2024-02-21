@@ -23,7 +23,7 @@ import { useStateContext } from '../context/StateContext';
 const pages = ['Home', 'Store', 'Contacts'];
 const pageLinks = {
   'Home': '/',
-  'Store': '/store',
+  'Store': '/store/all',
   'Contacts': '/contacts',
 };
 

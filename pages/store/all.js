@@ -18,24 +18,25 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 import { useRouter } from "next/router";
 import { useStateContext } from "@/context/StateContext";
+import Banner from "@/components/Banner";
 
 const theme = createTheme({
   palette: {
-    primary: {
-      main: "#FFFBEB",
-      light: "#FFFCF2",
-      dark: "#FFF8DD",
-      contrastText: "#000000",
-    },
-    secondary: {
-      main: "#F8CBA6",
-      contrastText: "#FFFFFF",
-    },
+     primary: {
+        main: '#FFFFFF',
+        light: '#FFFCF2',
+        dark: '#FFF8DD',
+        contrastText: '#000000',
+     },
+     secondary: {
+      main: '#333333',
+      contrastText: '#FFFFFF',
+   },
   },
   typography: {
-    fontFamily: `"League Spartan", sans-serif`,
-    fontWeightRegular: 300,
-  },
+    "fontFamily": `"League Spartan", sans-serif`,
+    "fontWeightRegular": 300,
+  }
 });
 
 function All({ featuredProducts }) {
@@ -75,6 +76,7 @@ function All({ featuredProducts }) {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
+      <Banner/>
 
       <div className="store-sorting">
         <FormControl
@@ -83,7 +85,7 @@ function All({ featuredProducts }) {
           sx={{ m: 1, minWidth: 120 }}
         >
           <InputLabel id="demo-simple-select-standard-label">
-            Filtrēt
+            Filter
           </InputLabel>
           <Select
             labelId="demo-simple-select-standard-label"
@@ -91,8 +93,8 @@ function All({ featuredProducts }) {
             onChange={handleChange}
             value={sortOrder}
           >
-            <MenuItem value="price desc">Cena dilstoši</MenuItem>
-            <MenuItem value="price asc">Cena augoši</MenuItem>
+            <MenuItem value="price desc">Price Desc</MenuItem>
+            <MenuItem value="price asc">Price Asc</MenuItem>
             <MenuItem value="name desc">Z-A</MenuItem>
             <MenuItem value="name asc">A-Z</MenuItem>
           </Select>
