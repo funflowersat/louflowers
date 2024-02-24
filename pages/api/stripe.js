@@ -1,5 +1,6 @@
 import Stripe from 'stripe';
 
+
 const stripe = new Stripe(`${process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY}`);
 
 export default async function handler(req, res) {
@@ -14,7 +15,7 @@ export default async function handler(req, res) {
             shipping_options: [
                 { shipping_rate: 'shr_1OmGVUH5OSUGbSSVFRdNuprJ' },
                 { shipping_rate: 'shr_1OmGWIH5OSUGbSSVw2QK5uk9' }
-            ],
+            ],            
             line_items: req.body.map((item) => {
                 const img = item.image[0].asset._ref;
                 let newImage = img.replace(
@@ -57,12 +58,46 @@ export default async function handler(req, res) {
                 }
             
             }),
+            custom_fields:[{
+              key: 'city',
+              label: {
+                type: 'custom', 
+                custom: 'City',
+              },
+              type: 'text',
+              optional: 'false',
+              },
+              {
+                key: 'address',
+                label: {
+                  type: 'custom', 
+                  custom: 'Address',
+                },
+                type: 'text',
+                optional: 'false',
+              },
+              {
+                key: 'zipcode',
+                label: {
+                  type: 'custom', 
+                  custom: 'Zip-code',
+                },
+                type: 'text',
+                optional: 'false',
+              }
+            ],
+
             success_url: `${req.headers.origin}/success`,
             cancel_url: `${req.headers.origin}/`,
           }
       // Create Checkout Sessions from body params.
+
       const session = await stripe.checkout.sessions.create(params);
+
       res.status(200).json(session);
+
+
+
     } catch (err) {
       res.status(err.statusCode || 500).json(err.message);
     }
