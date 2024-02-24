@@ -70,14 +70,22 @@ function ProductDetails({ product, products}) {
 
   const slides = 
     products.map((item) => (
+      <>
+        { 
+          item.name != name ?
+            <SwiperSlide key={item._id} style={{ marginRight: '100px' }}>
 
-      <SwiperSlide key={item._id} style={{ marginRight: '100px' }}>
-        <Product
-          key={item._id}
-          product={item}
-        />
-      </SwiperSlide>
+                <Product
+                  key={item._id}
+                  product={item}
+                />
 
+            </SwiperSlide>
+          :
+          null
+        } 
+      </>
+      
     ));
 
     const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
