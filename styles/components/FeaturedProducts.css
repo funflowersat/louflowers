@@ -44,6 +44,14 @@
 
 /* Product.js */   
 
+.product-progress{
+    background-color: #f7e1e4;
+}
+
+.MuiLinearProgress-bar1Indeterminate, .MuiLinearProgress-bar2Indeterminate{
+    background-color: #ef3682 !important;
+}
+
 .toggle-button-container{
     display: flex;
     align-self: end;
