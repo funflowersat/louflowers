@@ -77,16 +77,16 @@
 }
 
 .slug-desc-name{
-    font-weight: 400;
+    font-weight: 400 !important;
     color: #4f4f4f;
 }
 .slug-desc-category{
-    font-weight: 300;
+    font-weight: 300 !important;
     color: #4f4f4fd3;
     font-size: 20px;
 }
 .slug-desc-contents{
-    font-weight: 400;
+    font-weight: 400 !important;
     color: #4f4f4f;
     margin-top: 5px !important;
 }
@@ -98,7 +98,7 @@
 
 .slug-desc-price{
     margin-top: 20px !important;
-    font-weight: 500;
+    font-weight: 500 !important;
     color: #ffd7dc;
 }
 
