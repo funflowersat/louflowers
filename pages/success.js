@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import Navbar from "@/components/Navbar"
+import Navbar from "@/components/Navbar";
 import { useStateContext } from "@/context/StateContext";
 
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
@@ -15,13 +14,13 @@ import { Typography, Button } from "@mui/material";
 const theme = createTheme({
   palette: {
      primary: {
-        main: '#FFFBEB',
+        main: '#FFFFFF',
         light: '#FFFCF2',
         dark: '#FFF8DD',
         contrastText: '#000000',
      },
      secondary: {
-      main: '#F8CBA6',
+      main: '#333333',
       contrastText: '#FFFFFF',
    },
   },
@@ -51,7 +50,7 @@ function Success() {
             <LocalMallOutlinedIcon sx={{color:"green", fontSize: "100px"}}/>
             <Typography variant="h3">Thank you for your oder!</Typography>
             <Typography variant="h6" sx={{fontWeight: "300"}}> Order confirmation has been sent to your e-mail. </Typography>
-            <Typography variant="h6" sx={{fontWeight: "300", mt: 4}}> For any questions please contact us at <Link href="/contacts" style={{color: "#F8CBA6"}}>info@louflower.at</Link> </Typography>
+            <Typography variant="h6" sx={{fontWeight: "300", mt: 4}}> For any questions please contact us at <Link href="/contacts" style={{color: "#ef3682"}}>info@louflowers.at</Link> </Typography>
             <Button href="/" variant="contained" color="secondary" sx={{mt: 4, fontSize: "18px", fontWeight: "400"}}> Continue shopping </Button>
           </div>
       </div>
