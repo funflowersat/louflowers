@@ -1,6 +1,5 @@
 import React from 'react'
-import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
-
+import DiscountIcon from '@mui/icons-material/Discount';
 
 function Banner() {
 
@@ -8,7 +7,7 @@ function Banner() {
   return (
     <>
       <div className="b-container">
-          <p  className='b-p1'> Free delivery on orders from 58.99€ </p> <LocalShippingOutlinedIcon className='b-icon'/>
+          <p  className='b-p1'> Use code 19WZFTIP to receive 15% discount on orders from 80.00€ </p> <DiscountIcon className='b-icon'/>
       </div>
     </>
   )
