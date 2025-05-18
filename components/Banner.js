@@ -3,7 +3,6 @@ import DiscountIcon from '@mui/icons-material/Discount';
 
 function Banner() {
 
-  
   return (
     <>
       <div className="b-container">
