@@ -28,7 +28,7 @@ const theme = createTheme({
     "fontFamily": `"League Spartan", sans-serif`,
     "fontWeightRegular": 300,
   }
-});
+}); 
 
 function Success() {
   const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
